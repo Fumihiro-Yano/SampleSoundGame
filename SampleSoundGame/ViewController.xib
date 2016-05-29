@@ -21,17 +21,26 @@
                     <rect key="frame" x="256" y="256" width="88" height="88"/>
                     <state key="normal" image="play"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baB-bI-TmJ">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baB-bI-TmJ">
                     <rect key="frame" x="131" y="131" width="165" height="165"/>
                     <state key="normal" image="red"/>
+                    <connections>
+                        <action selector="soundButtonPressed:" destination="-1" eventType="touchUpInside" id="RKY-iV-e66"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-qK-9zq">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-qK-9zq">
                     <rect key="frame" x="304" y="131" width="166" height="165"/>
                     <state key="normal" image="yellow"/>
+                    <connections>
+                        <action selector="soundButtonPressed:" destination="-1" eventType="touchUpInside" id="NXF-rI-m7t"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-y2-1L1">
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-y2-1L1">
                     <rect key="frame" x="131" y="304" width="165" height="166"/>
                     <state key="normal" image="green"/>
+                    <connections>
+                        <action selector="soundButtonPressed:" destination="-1" eventType="touchUpInside" id="imf-H3-RQC"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlq-DC-qPq">
                     <rect key="frame" x="263" y="75" width="74.5" height="27.5"/>
@@ -39,9 +48,12 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-72-TGp">
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-72-TGp">
                     <rect key="frame" x="304" y="304" width="166" height="166"/>
                     <state key="normal" image="blue"/>
+                    <connections>
+                        <action selector="soundButtonPressed:" destination="-1" eventType="touchUpInside" id="6bT-Lm-qOY"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -66,6 +66,25 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         sound3Player.numberOfLoops = 0
         sound4Player.numberOfLoops = 0
     }
+    
+    @IBAction func soundButtonPressed(sender: AnyObject) {
+        let button = sender as! UIButton
+        
+        switch button.tag {
+        case 1:
+            sound1Player.play()
+        case 2:
+            sound2Player.play()
+        case 3:
+            sound3Player.play()
+        case 4:
+            sound4Player.play()
+        default:
+            break
+        }
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
