@@ -18,16 +18,44 @@
                     <rect key="frame" x="256" y="256" width="88" height="88"/>
                     <state key="normal" image="play"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baB-bI-TmJ">
+                    <rect key="frame" x="133" y="131" width="165" height="165"/>
+                    <state key="normal" image="red"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-y2-1L1">
+                    <rect key="frame" x="133" y="299" width="165" height="166"/>
+                    <state key="normal" image="green"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-72-TGp">
+                    <rect key="frame" x="301" y="299" width="166" height="166"/>
+                    <state key="normal" image="blue"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-qK-9zq">
+                    <rect key="frame" x="301" y="131" width="166" height="165"/>
+                    <state key="normal" image="yellow"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="top" secondItem="lQ4-qK-9zq" secondAttribute="bottom" constant="-40" id="64Q-aU-dGM"/>
                 <constraint firstItem="128-Y2-f0E" firstAttribute="centerX" secondItem="axM-jS-iDC" secondAttribute="centerX" id="6fW-BT-1FO"/>
+                <constraint firstItem="irm-72-TGp" firstAttribute="top" secondItem="128-Y2-f0E" secondAttribute="bottom" constant="-45" id="Luq-X9-STH"/>
                 <constraint firstItem="128-Y2-f0E" firstAttribute="centerY" secondItem="axM-jS-iDC" secondAttribute="centerY" id="MSQ-Kt-rIR"/>
+                <constraint firstItem="lQ4-qK-9zq" firstAttribute="leading" secondItem="128-Y2-f0E" secondAttribute="trailing" constant="-43" id="N6p-yy-yTP"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="leading" secondItem="lYA-y2-1L1" secondAttribute="trailing" constant="-42" id="aF2-gX-fBm"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="leading" secondItem="baB-bI-TmJ" secondAttribute="trailing" constant="-42" id="aiZ-uf-qh0"/>
+                <constraint firstItem="lYA-y2-1L1" firstAttribute="top" secondItem="128-Y2-f0E" secondAttribute="bottom" constant="-45" id="apO-zU-W52"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="top" secondItem="baB-bI-TmJ" secondAttribute="bottom" constant="-40" id="jEz-AR-ubz"/>
+                <constraint firstItem="irm-72-TGp" firstAttribute="leading" secondItem="128-Y2-f0E" secondAttribute="trailing" constant="-43" id="ssH-qM-C13"/>
             </constraints>
             <point key="canvasLocation" x="245" y="330"/>
         </view>
     </objects>
     <resources>
+        <image name="blue" width="166" height="166"/>
+        <image name="green" width="165" height="166"/>
         <image name="play" width="88" height="88"/>
+        <image name="red" width="165" height="165"/>
+        <image name="yellow" width="166" height="165"/>
     </resources>
 </document>
