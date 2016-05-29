@@ -68,21 +68,41 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func soundButtonPressed(sender: AnyObject) {
-        let button = sender as! UIButton
         
-        switch button.tag {
-        case 1:
-            sound1Player.play()
-        case 2:
-            sound2Player.play()
-        case 3:
-            sound3Player.play()
-        case 4:
-            sound4Player.play()
-        default:
-            break
+        if readyForUser {
+            let button = sender as! UIButton
+            
+            switch button.tag {
+            case 1:
+                sound1Player.play()
+                checkIfCorrect(1)
+                break
+            case 2:
+                sound2Player.play()
+                checkIfCorrect(2)
+                break
+            case 3:
+                sound3Player.play()
+                checkIfCorrect(3)
+                break
+            case 4:
+                sound4Player.play()
+                checkIfCorrect(4)
+                break
+            default:
+                break
+            }
         }
     }
+    
+    func checkIfCorrect(buttonPressed:Int) {
+        if buttonPressed == playlist[numberOfTaps] {
+            if numberOfTaps == playlist.count - 1 {
+            
+            }
+        }
+    }
+    
     
     
     @IBAction func startGame(sender: AnyObject) {
@@ -92,7 +112,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         playlist.append(randomNumber)
         startGameButton.hidden = true
         playNextItem()
-        
     }
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         
