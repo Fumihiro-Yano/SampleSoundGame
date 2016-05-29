@@ -85,6 +85,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        
+        if currentItem <= playlist.count - 1 {
+            // play of next item
+        }
+        else{
+            //resetButonHighlights
+            //endButtons
+        }
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
