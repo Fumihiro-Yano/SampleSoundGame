@@ -34,7 +34,37 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func setupAudioFiles(){
-    
+        
+        let soundFilePath = NSBundle.mainBundle().pathForResource("1", ofType: "wav")
+        let soundFileURL = NSURL(fileURLWithPath: soundFilePath!)
+        
+        let soundFilePath2 = NSBundle.mainBundle().pathForResource("2", ofType: "wav")
+        let soundFileURL2 = NSURL(fileURLWithPath: soundFilePath2!)
+        
+        let soundFilePath3 = NSBundle.mainBundle().pathForResource("3", ofType: "wav")
+        let soundFileURL3 = NSURL(fileURLWithPath: soundFilePath3!)
+        
+        let soundFilePath4 = NSBundle.mainBundle().pathForResource("4", ofType: "wav")
+        let soundFileURL4 = NSURL(fileURLWithPath: soundFilePath4!)
+        
+        do {
+            try sound1Player = AVAudioPlayer(contentsOfURL: soundFileURL)
+            try sound2Player = AVAudioPlayer(contentsOfURL: soundFileURL2)
+            try sound3Player = AVAudioPlayer(contentsOfURL: soundFileURL3)
+            try sound4Player = AVAudioPlayer(contentsOfURL: soundFileURL4)
+        }catch {
+            print(error)
+        }
+        
+        sound1Player.delegate = self
+        sound2Player.delegate = self
+        sound3Player.delegate = self
+        sound4Player.delegate = self
+        
+        sound1Player.numberOfLoops = 0
+        sound2Player.numberOfLoops = 0
+        sound3Player.numberOfLoops = 0
+        sound4Player.numberOfLoops = 0
     }
 
     override func didReceiveMemoryWarning() {
