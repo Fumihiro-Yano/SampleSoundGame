@@ -19,34 +19,42 @@
                     <state key="normal" image="play"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baB-bI-TmJ">
-                    <rect key="frame" x="133" y="131" width="165" height="165"/>
+                    <rect key="frame" x="131" y="131" width="165" height="165"/>
                     <state key="normal" image="red"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-y2-1L1">
-                    <rect key="frame" x="133" y="299" width="165" height="166"/>
-                    <state key="normal" image="green"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-qK-9zq">
+                    <rect key="frame" x="304" y="131" width="166" height="165"/>
+                    <state key="normal" image="yellow"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-72-TGp">
-                    <rect key="frame" x="301" y="299" width="166" height="166"/>
+                    <rect key="frame" x="304" y="304" width="166" height="166"/>
                     <state key="normal" image="blue"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-qK-9zq">
-                    <rect key="frame" x="301" y="131" width="166" height="165"/>
-                    <state key="normal" image="yellow"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlq-DC-qPq">
+                    <rect key="frame" x="263" y="75" width="74.5" height="27.5"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-y2-1L1">
+                    <rect key="frame" x="131" y="304" width="165" height="166"/>
+                    <state key="normal" image="green"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="128-Y2-f0E" firstAttribute="top" secondItem="lQ4-qK-9zq" secondAttribute="bottom" constant="-40" id="64Q-aU-dGM"/>
-                <constraint firstItem="128-Y2-f0E" firstAttribute="centerX" secondItem="axM-jS-iDC" secondAttribute="centerX" id="6fW-BT-1FO"/>
-                <constraint firstItem="irm-72-TGp" firstAttribute="top" secondItem="128-Y2-f0E" secondAttribute="bottom" constant="-45" id="Luq-X9-STH"/>
-                <constraint firstItem="128-Y2-f0E" firstAttribute="centerY" secondItem="axM-jS-iDC" secondAttribute="centerY" id="MSQ-Kt-rIR"/>
-                <constraint firstItem="lQ4-qK-9zq" firstAttribute="leading" secondItem="128-Y2-f0E" secondAttribute="trailing" constant="-43" id="N6p-yy-yTP"/>
-                <constraint firstItem="128-Y2-f0E" firstAttribute="leading" secondItem="lYA-y2-1L1" secondAttribute="trailing" constant="-42" id="aF2-gX-fBm"/>
-                <constraint firstItem="128-Y2-f0E" firstAttribute="leading" secondItem="baB-bI-TmJ" secondAttribute="trailing" constant="-42" id="aiZ-uf-qh0"/>
-                <constraint firstItem="lYA-y2-1L1" firstAttribute="top" secondItem="128-Y2-f0E" secondAttribute="bottom" constant="-45" id="apO-zU-W52"/>
-                <constraint firstItem="128-Y2-f0E" firstAttribute="top" secondItem="baB-bI-TmJ" secondAttribute="bottom" constant="-40" id="jEz-AR-ubz"/>
-                <constraint firstItem="irm-72-TGp" firstAttribute="leading" secondItem="128-Y2-f0E" secondAttribute="trailing" constant="-43" id="ssH-qM-C13"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="centerY" secondItem="axM-jS-iDC" secondAttribute="centerY" id="1sg-YI-Whl"/>
+                <constraint firstItem="irm-72-TGp" firstAttribute="leading" secondItem="128-Y2-f0E" secondAttribute="trailing" constant="-40" id="7Yo-DO-rHT"/>
+                <constraint firstItem="lYA-y2-1L1" firstAttribute="top" secondItem="128-Y2-f0E" secondAttribute="bottom" constant="-40" id="E7Y-tU-Yow"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="top" secondItem="lQ4-qK-9zq" secondAttribute="bottom" constant="-40" id="HTb-yY-1o6"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="centerX" secondItem="axM-jS-iDC" secondAttribute="centerX" id="JgT-7J-dXF"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="leading" secondItem="baB-bI-TmJ" secondAttribute="trailing" constant="-40" id="M1m-6N-c82"/>
+                <constraint firstItem="Nlq-DC-qPq" firstAttribute="top" secondItem="axM-jS-iDC" secondAttribute="top" constant="75" id="eGp-pg-5KO"/>
+                <constraint firstItem="irm-72-TGp" firstAttribute="top" secondItem="128-Y2-f0E" secondAttribute="bottom" constant="-40" id="fOl-Dh-w1H"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="top" secondItem="baB-bI-TmJ" secondAttribute="bottom" constant="-40" id="hCk-tV-Bc3"/>
+                <constraint firstItem="lQ4-qK-9zq" firstAttribute="leading" secondItem="128-Y2-f0E" secondAttribute="trailing" constant="-40" id="qwU-jP-Dw5"/>
+                <constraint firstItem="Nlq-DC-qPq" firstAttribute="centerX" secondItem="axM-jS-iDC" secondAttribute="centerX" id="rqn-x4-SZM"/>
+                <constraint firstItem="128-Y2-f0E" firstAttribute="leading" secondItem="lYA-y2-1L1" secondAttribute="trailing" constant="-40" id="yFn-gA-CaW"/>
             </constraints>
             <point key="canvasLocation" x="245" y="330"/>
         </view>
