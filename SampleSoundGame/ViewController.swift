@@ -28,10 +28,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var level = 1
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupAudioFiles()
+    }
+    
+    func setupAudioFiles(){
+    
     }
 
     override func didReceiveMemoryWarning() {
