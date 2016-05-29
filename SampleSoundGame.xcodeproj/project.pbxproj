@@ -12,6 +12,10 @@
 		E72D33A01CFAF4A700BCD805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72D339F1CFAF4A700BCD805 /* Assets.xcassets */; };
 		E72D33A31CFAF4A700BCD805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72D33A11CFAF4A700BCD805 /* LaunchScreen.storyboard */; };
 		E72D33AB1CFAF88000BCD805 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72D33AA1CFAF88000BCD805 /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E72D33B01CFB075700BCD805 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = E72D33AC1CFB075700BCD805 /* 4.wav */; settings = {ASSET_TAGS = (); }; };
+		E72D33B11CFB075700BCD805 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = E72D33AD1CFB075700BCD805 /* 3.wav */; settings = {ASSET_TAGS = (); }; };
+		E72D33B21CFB075700BCD805 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E72D33AE1CFB075700BCD805 /* 2.wav */; settings = {ASSET_TAGS = (); }; };
+		E72D33B31CFB075700BCD805 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E72D33AF1CFB075700BCD805 /* 1.wav */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		E72D33A21CFAF4A700BCD805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72D33A41CFAF4A700BCD805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E72D33AA1CFAF88000BCD805 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E72D33AC1CFB075700BCD805 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		E72D33AD1CFB075700BCD805 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		E72D33AE1CFB075700BCD805 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		E72D33AF1CFB075700BCD805 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,22 @@
 				E72D339A1CFAF4A700BCD805 /* ViewController.swift */,
 				E72D33AA1CFAF88000BCD805 /* ViewController.xib */,
 				E72D339F1CFAF4A700BCD805 /* Assets.xcassets */,
+				E72D33B41CFB075D00BCD805 /* Sounds */,
 				E72D33A11CFAF4A700BCD805 /* LaunchScreen.storyboard */,
 				E72D33A41CFAF4A700BCD805 /* Info.plist */,
 			);
 			path = SampleSoundGame;
+			sourceTree = "<group>";
+		};
+		E72D33B41CFB075D00BCD805 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E72D33AC1CFB075700BCD805 /* 4.wav */,
+				E72D33AD1CFB075700BCD805 /* 3.wav */,
+				E72D33AE1CFB075700BCD805 /* 2.wav */,
+				E72D33AF1CFB075700BCD805 /* 1.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72D33A31CFAF4A700BCD805 /* LaunchScreen.storyboard in Resources */,
+				E72D33B31CFB075700BCD805 /* 1.wav in Resources */,
+				E72D33B11CFB075700BCD805 /* 3.wav in Resources */,
+				E72D33B01CFB075700BCD805 /* 4.wav in Resources */,
+				E72D33B21CFB075700BCD805 /* 2.wav in Resources */,
 				E72D33AB1CFAF88000BCD805 /* ViewController.xib in Resources */,
 				E72D33A01CFAF4A700BCD805 /* Assets.xcassets in Resources */,
 			);
