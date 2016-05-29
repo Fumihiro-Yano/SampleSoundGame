@@ -97,6 +97,24 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
+    func playNextItem() {
+      let selectedItem = playlist[currentItem]
+      
+        switch selectedItem {
+        case 1:
+            sound1Player.play()
+        case 2:
+            sound2Player.play()
+        case 3:
+            sound3Player.play()
+        case 4:
+            sound4Player.play()
+        default:
+            break
+        }
+    
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
