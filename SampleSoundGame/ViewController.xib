@@ -6,7 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="SampleSoundGame" customModuleProvider="target">
             <connections>
+                <outlet property="levelLabel" destination="Nlq-DC-qPq" id="nIl-Pi-O2h"/>
+                <outlet property="startGameButton" destination="128-Y2-f0E" id="0ht-0J-LUD"/>
                 <outlet property="view" destination="axM-jS-iDC" id="0vJ-hb-eJC"/>
+                <outletCollection property="soundButton" destination="lQ4-qK-9zq" collectionClass="NSMutableArray" id="aNT-kS-tqy"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,9 +29,9 @@
                     <rect key="frame" x="304" y="131" width="166" height="165"/>
                     <state key="normal" image="yellow"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-72-TGp">
-                    <rect key="frame" x="304" y="304" width="166" height="166"/>
-                    <state key="normal" image="blue"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-y2-1L1">
+                    <rect key="frame" x="131" y="304" width="165" height="166"/>
+                    <state key="normal" image="green"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlq-DC-qPq">
                     <rect key="frame" x="263" y="75" width="74.5" height="27.5"/>
@@ -36,9 +39,9 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-y2-1L1">
-                    <rect key="frame" x="131" y="304" width="165" height="166"/>
-                    <state key="normal" image="green"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-72-TGp">
+                    <rect key="frame" x="304" y="304" width="166" height="166"/>
+                    <state key="normal" image="blue"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
