@@ -102,17 +102,48 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
       
         switch selectedItem {
         case 1:
+            highlightButtonWithTag(1)
             sound1Player.play()
         case 2:
+            highlightButtonWithTag(2)
             sound2Player.play()
         case 3:
+            highlightButtonWithTag(3)
             sound3Player.play()
         case 4:
+            highlightButtonWithTag(4)
             sound4Player.play()
         default:
             break
         }
+        currentItem += 1
+    }
     
+    func highlightButtonWithTag(tag:Int) {
+        switch tag {
+        case 1:
+            resetButtonHighlights()
+            soundButton[tag - 1].setImage(UIImage(named: "redPressed"), forState: .Normal)
+        case 2:
+            resetButtonHighlights()
+            soundButton[tag - 1].setImage(UIImage(named: "yellowPressed"), forState: .Normal)
+        case 3:
+            resetButtonHighlights()
+            soundButton[tag - 1].setImage(UIImage(named: "bluePressed"), forState: .Normal)
+        case 4:
+            resetButtonHighlights()
+            soundButton[tag - 1].setImage(UIImage(named: "greenPressed"), forState: .Normal)
+        default:
+            break
+        }
+    
+    }
+    
+    func resetButtonHighlights() {
+        soundButton[0].setImage(UIImage(named: "red"), forState: .Normal)
+        soundButton[1].setImage(UIImage(named: "yellow"), forState: .Normal)
+        soundButton[2].setImage(UIImage(named: "blue"), forState: .Normal)
+        soundButton[3].setImage(UIImage(named: "green"), forState: .Normal)
     }
     
 
