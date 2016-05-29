@@ -11,6 +11,7 @@
 		E72D339B1CFAF4A700BCD805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D339A1CFAF4A700BCD805 /* ViewController.swift */; };
 		E72D33A01CFAF4A700BCD805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72D339F1CFAF4A700BCD805 /* Assets.xcassets */; };
 		E72D33A31CFAF4A700BCD805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72D33A11CFAF4A700BCD805 /* LaunchScreen.storyboard */; };
+		E72D33AB1CFAF88000BCD805 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72D33AA1CFAF88000BCD805 /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E72D339F1CFAF4A700BCD805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E72D33A21CFAF4A700BCD805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72D33A41CFAF4A700BCD805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72D33AA1CFAF88000BCD805 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E72D33981CFAF4A700BCD805 /* AppDelegate.swift */,
 				E72D339A1CFAF4A700BCD805 /* ViewController.swift */,
+				E72D33AA1CFAF88000BCD805 /* ViewController.xib */,
 				E72D339F1CFAF4A700BCD805 /* Assets.xcassets */,
 				E72D33A11CFAF4A700BCD805 /* LaunchScreen.storyboard */,
 				E72D33A41CFAF4A700BCD805 /* Info.plist */,
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72D33A31CFAF4A700BCD805 /* LaunchScreen.storyboard in Resources */,
+				E72D33AB1CFAF88000BCD805 /* ViewController.xib in Resources */,
 				E72D33A01CFAF4A700BCD805 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
