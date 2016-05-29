@@ -85,13 +85,22 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     
+    @IBAction func startGame(sender: AnyObject) {
+        levelLabel.text = "Level 1"
+        
+        let randomNumber = Int(arc4random_uniform(4) + 1)
+        playlist.append(randomNumber)
+        startGameButton.hidden = true
+        playNextItem()
+        
+    }
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         
         if currentItem <= playlist.count - 1 {
-            // play of next item
+            playNextItem()
         }
         else{
-            //resetButonHighlights
+            resetButtonHighlights()
             //endButtons
         }
         

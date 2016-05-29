@@ -10,6 +10,9 @@
                 <outlet property="startGameButton" destination="128-Y2-f0E" id="0ht-0J-LUD"/>
                 <outlet property="view" destination="axM-jS-iDC" id="0vJ-hb-eJC"/>
                 <outletCollection property="soundButton" destination="lQ4-qK-9zq" collectionClass="NSMutableArray" id="aNT-kS-tqy"/>
+                <outletCollection property="soundButton" destination="baB-bI-TmJ" collectionClass="NSMutableArray" id="vMG-hQ-wKq"/>
+                <outletCollection property="soundButton" destination="irm-72-TGp" collectionClass="NSMutableArray" id="DdF-IE-1Xi"/>
+                <outletCollection property="soundButton" destination="lYA-y2-1L1" collectionClass="NSMutableArray" id="vVi-en-E8K"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,6 +23,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="128-Y2-f0E">
                     <rect key="frame" x="256" y="256" width="88" height="88"/>
                     <state key="normal" image="play"/>
+                    <connections>
+                        <action selector="startGame:" destination="-1" eventType="touchUpInside" id="PsS-SS-UCA"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baB-bI-TmJ">
                     <rect key="frame" x="131" y="131" width="165" height="165"/>
